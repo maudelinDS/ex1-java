@@ -1,11 +1,19 @@
 package jt.oopnext;
 
+import jt.oopnext.users.Address;
+import jt.oopnext.users.User;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
-    }
-}
 
+        User myFirstUser = new User("test.test.ch", "09.01.2023", "momo", "toto", new Address());
+
+        System.out.println(myFirstUser.toString());
+
+    }
+
+}
 
 
 // void dans une fonction de Java, cela signifie que la fonction ne renvoie rien.
