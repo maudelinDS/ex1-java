@@ -12,4 +12,14 @@ public class Address {
         this.number = number;
         this.city = city;
     }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "npa=" + npa +
+                ", street='" + street + '\'' +
+                ", number=" + number +
+                ", city='" + city + '\'' +
+                '}';
+    }
 }
