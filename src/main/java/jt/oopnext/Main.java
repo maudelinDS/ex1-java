@@ -9,8 +9,10 @@ public class Main {
 
         User myFirstUser = new User("test.test.ch", "09.01.2023", "momo", "toto", new Address(1000, "rue du jura", 11, "lausanne"));
 
+        new Address("rue du jura-11-1000-Lausanne").toString();
         myFirstUser.setFirstName("vbc");
-        
+
+
         System.out.println(myFirstUser);
 
     }

@@ -13,6 +13,19 @@ public class Address {
         this.city = city;
     }
 
+    public void setAddressFromString(String address) {
+        var splitted = address.split("-");
+
+        npa = Integer.parseInt(splitted[2]);
+        street = splitted[0];
+        number = Integer.parseInt(splitted[1]);
+        city = splitted[3];
+    }
+
+    public Address(String longAddress) {
+        setAddressFromString(longAddress);
+    }
+
     @Override
     public String toString() {
         return "Address{" +
