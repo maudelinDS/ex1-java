@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
 
-        User myFirstUser = new User("test.test.ch", "09.01.2023", "momo", "toto", new Address());
+        User myFirstUser = new User("test.test.ch", "09.01.2023", "momo", "toto", new Address(1000, "rue du jura", 11, "lausanne"));
 
         System.out.println(myFirstUser.toString());
 
